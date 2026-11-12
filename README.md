@@ -1,6 +1,6 @@
 # annual-report-reader
 
-Principal-risk extraction from annual reports (Vestas tech challenge).
+Principal-risk extraction from annual reports.
 
 - [PLAN.md](PLAN.md): the product thinking (user, surface, what we optimise for, assumptions, what's deferred)
 - [DESIGN.md](DESIGN.md): stack, parsing, decomposition, evaluation, cost and scaling
