@@ -1,13 +1,13 @@
 """`arr-pipeline run`: extract → evaluate step 1 → merge → evaluate step 2, saving every run and evaluation.
 
     uv run arr-pipeline run                                   # the defaults: what notebooks 01-02b run
-    uv run arr-pipeline run --model candidate_2 --effort default   # another extraction model, same judge
+    uv run arr-pipeline run --model mini --effort default   # another extraction model, same judge
     uv run arr-pipeline run --extraction-run extract-...      # step 2 (and its evaluation) on a saved run
     uv run arr-pipeline run --no-eval                         # the pipeline alone, no judge calls
     uv run arr-pipeline repeat -n 5                           # 5 independent runs, then how much they differ
     uv run arr-pipeline repeat -n 5 --extraction-run extract-...   # the merge's stability on one extraction
 
-A model is a deployment name, or an alias: `candidate_2` reads AZURE_OPENAI_DEPLOYMENT_CANDIDATE_2. Effort
+A model is a deployment name, or an alias: `mini` reads AZURE_OPENAI_DEPLOYMENT_MINI. Effort
 `default` leaves it to the deployment (needed for non-reasoning models). The judges always come from JudgeConfig,
 so runs with different extraction models are graded by the same yardstick.
 """
@@ -214,7 +214,7 @@ def repeat(args: argparse.Namespace, argv: list[str]) -> int:
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     args = parse_args(argv)
-    load_dotenv(REPO_ROOT / ".env")
+    load_dotenv(REPO_ROOT / ".env", override=True)  # .env wins over stale shell variables
     if args.command == "repeat":
         return repeat(args, argv)
     return 1 if run_once(args).failed else 0

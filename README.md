@@ -54,7 +54,22 @@ Options (`uv run arr-pipeline run --help`): `--model`, `--effort`, `--prompt`, `
 `uv run arr-pipeline repeat -n 5 [same options]` runs the pipeline 5 times, independently, and reports how the runs
 differ: F1 per run and its spread, and for every golden risk in how many runs it was found, with which category and
 which merged pages (`*` marks what varies). The report is saved to `eval/runs/stability-….json`. A model is a deployment name or an alias
-(`candidate_2` reads `AZURE_OPENAI_DEPLOYMENT_CANDIDATE_2`); `--effort default` leaves it to the deployment.
+(`mini` reads `AZURE_OPENAI_DEPLOYMENT_MINI`); `--effort default` leaves it to the deployment.
+
+### Compare models: 10 runs each
+
+```bash
+# Luna (the default for extraction and merge)
+uv run arr-pipeline repeat -n 10
+
+# GPT-4.1 mini for extraction and merge
+uv run arr-pipeline repeat -n 10 --model mini --effort default --merge-model mini --merge-effort default
+```
+
+The judge is Sol in both, so the scores are comparable. GPT-4.1 mini is not a reasoning model, so it needs
+`--effort default` (and `--merge-effort default`): the defaults, `high` and `medium`, send a reasoning effort it
+rejects. To swap only the extraction model, drop the two `--merge-…` options and step 2 stays on Luna. Each command
+writes its own `eval/runs/stability-….json`.
 
 The notebooks show the same steps stage by stage: open them in VS Code with the .venv kernel and run 01 → 01b,
 then 02 → 02b. The CLI and the notebooks call the same step modules; `annual_report_reader/pipeline.py` strings them

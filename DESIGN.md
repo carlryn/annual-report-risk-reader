@@ -60,7 +60,7 @@ Images cost more input tokens than text (about 2.4x on p.71), but LLM costs are 
 
 **Consistency:** PLAN's second goal is that the same report gives the same risks every time, which is the "two analysts disagree" problem. The model isn't deterministic (the deployment ignores temperature), so I measure consistency directly: independent runs on the same pages, with nothing reused between runs. It's basic but it provides an idea of possible variance.
 
-- In my tests the risks stay the same with minimal variance.
+- In my tests the risks stay the same with minimal variance. 1 risk that comes and goes.
 - The category is what moves. Given my definition of principal risk, it is expected.
 - If we extend this to tougher material, I'm sure that could change.
 

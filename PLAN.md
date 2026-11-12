@@ -18,11 +18,6 @@ The first slice doesn't replace the analyst; it speeds them up and collects revi
 
 A batch job, not an interactive tool. When a report is published (from a release calendar or an alert), its URL goes onto a queue. A worker(not human) downloads the PDF, extracts the principal risks and writes them to the database. I don't see latency mattering much here. This is not high frequency trading, and simply receiving the risks within a reasonable time frame should be enough. Let's say 30 minutes.
 
-## What I'm optimising for
-
-1. **Recall.** A missed principal risk is worse than an extra one that the analyst rejects. I'd rather pay in precision.
-2. **Consistency and grounding.** Every risk points to its section and page, so the analyst can check it quickly, and the same report gives the same risks every time. This tackles the "two analysts disagree" problem directly.
-
 ## Assumptions & in-scope
 
 - I only process pages the case points to. I cover the two sections it asks to focus on: Risk management (p.50-51) and Material impacts, risks and opportunities (p.71-74). From the optional sections, I add Cyber security (p.118) and the first page of Climate change (p.85). Although I did run test with basic page classification in notebook 03.

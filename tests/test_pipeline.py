@@ -135,8 +135,8 @@ def test_merge_refuses_another_run_or_failed_pages():
 
 
 def test_deployment_aliases_and_effort(monkeypatch):
-    monkeypatch.setenv("AZURE_OPENAI_DEPLOYMENT_CANDIDATE_2", "gpt41mini")
-    assert cli.deployment("candidate_2") == "gpt41mini"
+    monkeypatch.setenv("AZURE_OPENAI_DEPLOYMENT_MINI", "gpt41mini")
+    assert cli.deployment("mini") == "gpt41mini"
     assert cli.deployment("my-deployment") == "my-deployment" and cli.deployment(None) is None
     assert cli.effort("default") == {"reasoning_effort": None} and cli.effort(None) == {}
 
