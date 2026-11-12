@@ -1,0 +1,172 @@
+# Golden set, step 1: the principal risks on each page, as the extraction step should return them.
+# Description and mitigation are copied word for word from the page. `mitigation: None` = the page states none.
+# A page with `[]` was labelled and has no principal risks (tests false positives).
+
+50: []
+
+51:
+  - title: Geopolitical conflict and trade barriers
+    category: supply chain
+    section: Main risks
+    description: >-
+      Conflicts in Ukraine and the Middle East and intensifying trade tensions, with tariffs, sanctions, and export
+      controls on e.g. critical materials, are disrupting global supply chains and business operations. This can delay
+      deliveries and raise Vestas’ costs through tariffs and trade barriers, challenging cost efficiency.
+    mitigation: >-
+      We manage geopolitical risks by continuously monitoring global developments and implementing appropriate
+      mitigations. By maintaining a global and regionalised manufacturing footprint, Vestas can effectively respond to
+      geopolitical shifts and regulatory changes. Additionally, we exercise commercial discipline and utilise
+      indexation and financial hedging strategies to minimise exposure.
+
+  - title: Shifting industrial policy and regulation
+    category: regulatory
+    secondary: market
+    section: Main risks
+    description: >-
+      Governments in the EU, China, and the USA are introducing assertive industrial policies aimed at securing
+      domestic manufacturing and energy independence, reshaping the regulatory landscape. Changing market incentives
+      and intensified clean-tech competition may weaken project economics, reduce market volumes, and challenge
+      Vestas’ competitiveness.
+    mitigation: Proactive advocacy ensures alignment and compliance with evolving policies and the regulatory climate.
+
+  - title: Project execution
+    category: operational
+    section: Main risks
+    description: >-
+      Project execution at Vestas involves delivering complex onshore and offshore projects within specified
+      parameters relating to quality, cost, and timeline. As the scale and complexity of offshore projects grow, so
+      does the need for precise internal coordination. Execution is affected by delays in production capacity ramp-up,
+      quality control issues during scaling, and supply chain disruptions. The lack of industry-wide standardisation
+      and insufficient logistical infrastructure further complicate timely delivery. Success also depends on external
+      factors, such as supportive regulatory frameworks, the cross-border mobility of skilled workers, and the
+      availability of a sustainable and scalable supply chain, all of which remain vulnerable to geopolitical and
+      market shifts. Challenges in project execution can lead to delays in delivery, cost overruns, and margin
+      erosion, particularly as offshore projects grow in scale and complexity. Quality issues may result in formal
+      disputes and reputational damage. These factors can undermine Vestas’ ability to secure new business, reduce
+      investor confidence, and weaken long-term competitiveness in the global wind market
+    mitigation: >-
+      We mitigate execution risks through project governance, enhanced planning functions, and continuous alignment
+      between commercial and delivery teams. We invest in scalable manufacturing capacity and maintain close
+      coordination with suppliers to secure timely component availability.
+
+  - title: Cyber attacks
+    category: cyber
+    section: Main risks
+    description: >-
+      Vestas’ digital and other critical assets are exposed to cyber attacks. A cyber attack may have dual
+      implications for both Vestas as a company and for the societies that our energy solutions serve. Electricity
+      producers rely on Vestas’ energy solutions for reliable and secure sustainable energy production, making these
+      solutions critical infrastructure for societies around the world. Cyber-threat actors constantly evolve their
+      methods and techniques to attack Vestas’ energy solutions, for the purpose of extorsion or to destabilise energy
+      generation. Vestas’ technology, data, and operations are a potential target for geopolitical actors and the
+      cyber-criminal industry. Politically motivated cyber actors may seek to disrupt energy production. A cyber
+      attack on Vestas may be designed to impact our customers’ operations, causing electricity outage and physical
+      damage to assets. A successful cyber attack on Vestas’ energy solutions and our infrastructures might result in
+      significant economic loss and reputational damage.
+    mitigation: >-
+      As a global manufacturer and key contributor to critical infrastructure, Vestas is required to continuously
+      address evolving cyber risks, both to our company and to the customers we serve. We are developing cyber
+      security services aimed at helping our customers navigate cyber risks effectively, fulfil industry requirements
+      and standards, and uphold their responsibilities. During 2025, our cyber security efforts were effective and no
+      critical cyber security incidents took place
+
+71:
+  - title: Carbon taxes and tariffs
+    category: climate
+    section: E1 Climate Change - Financial materiality - Financial risks or opportunities.
+    description: >-
+      High carbon taxes and tariffs increase the price of GHG intense materials such as steel, increasing the overall
+      cost to produce wind turbines.
+    mitigation: None
+
+72: []  # environmental impacts (inside-out) only: no principal risks under the definition
+
+73:
+  - title: Cost implication of injuries in own workforce
+    category: operational
+    section: S1 Own Workforce - Double materiality - Financial risks or opportunities
+    description: Potential injuries leading to delays, lost work hours and compensation costs pose a financial risk
+    mitigation: None
+
+  - title: Cost implications of injuries to contractors and sub-contractors
+    category: supply chain
+    secondary: operational
+    section: S2 Workers in the value chain - Double materiality - Financial risks or opportunities
+    description: >-
+      Potential injuries to value chain workers leading to delays, lost work hours and compensation costs pose a risk.
+    mitigation: None
+
+  - title: Fines related to forced or child labour
+    category: supply chain
+    secondary: operational
+    section: S2 Workers in the value chain - Double materiality - Financial risks or opportunities
+    description: >-
+      Vestas’ global network of suppliers combined with the risk of fines related to child and forced labour
+      constitute a potential risks.
+    mitigation: None
+
+74:
+  - title: Insufficient market conditions
+    category: market
+    secondary: regulatory
+    section: G1 Business Conduct - Double materiality - Financial risks or opportunities
+    description: >-
+      Inadequate grid expansion, ineffective auction design and permit delays could increase costs, hinder
+      investments, and reduce the viability of wind deployment.
+    mitigation: None
+
+  - title: Cyber security risks
+    category: cyber
+    section: G1 Business Conduct - Double materiality - Financial risks or opportunities
+    description: >-
+      Cyber attacks might disrupt business operations, expose intellectual property, or cause legal liability.
+    mitigation: None
+
+  - title: Risk of corruption and bribery
+    category: regulatory
+    section: G1 Business Conduct - Financial materiality - Financial risks or opportunities
+    description: Vestas’ global presence presents an increased risk of exposure to corruption and bribery.
+    mitigation: None
+
+85:
+  - title: Carbon taxes and tariffs
+    category: climate
+    secondary: regulatory
+    section: E1 Climate Change - Impacts, risks, and opportunities
+    description: >-
+      Our business outlook is influenced by political and legal developments. Political and market transition risks,
+      such as carbon taxes, can financially impact Vestas. High carbon taxes and tariffs will increase the cost of
+      GHG-intensive mate- rials like steel, raising the overall cost of wind turbines. If we cannot distribute these
+      costs along our value chain or transi- tion to low-carbon alternatives fast enough, our cost base may be
+      impacted.
+    mitigation: None
+
+118:
+  - title: Cyber security incidents
+    category: cyber
+    section: G1 Entity-specific Cyber security - Impacts, risks, and opportunities
+    description: >-
+      A cyber security incident could disrupt Vestas’ ability to control power plants, directly impacting customers
+      and, ultimately, society through power outages or higher electricity prices. The primary threat comes from
+      politically or financially motivated actors seeking to trigger outages, and geopolitical tensions amplify the
+      risk as Vestas is a potential target for those seeking to impact customers and power producers.
+    mitigation: >-
+      Vestas’ enterprise-wide Cyber Risk Management Strategy, launched in 2024, systematically identifies, assesses,
+      and mitigates cyber risks. The Cyber Security Services Framework helps customers quantify and manage the impact
+      of cyber incidents, and a customer-focused Security Operations Centre monitors serviced power plants to detect
+      and respond to incidents. All Vestas technologies are built to the ISA/IEC 62443 cyber security standard.
+
+  - title: Cyber security risks
+    category: cyber
+    secondary: operational
+    section: G1 Entity-specific Cyber security - Impacts, risks, and opportunities
+    description: >-
+      Our digitally connected and geographically dispersed wind turbines are essential to deliver sustainable energy
+      but also represent potential targets for cyber-attacks. Such incidents could disrupt energy production and cause
+      outages. For Vestas, a successful cyber-attack could interrupt operations, erode partner trust, and cause
+      significant financial losses.
+    mitigation: >-
+      Vestas has increased investment in cyber security across R&D, service, and digital infrastructure over the past
+      three years and manages cyber risks through its enterprise-wide Cyber Risk Management Strategy. An internal
+      Security Operations Centre provides real-time detection and response across Vestas’ global digital
+      infrastructure, and the Cyber Academy trains every employee to reduce attack surfaces and respond to threats.

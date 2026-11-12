@@ -1,0 +1,39 @@
+[project]
+name = "annual-report-reader"
+version = "0.1.0"
+description = "Principal-risk extraction from annual reports: notebooks first, lifted into a small package"
+readme = "README.md"
+authors = [
+    { name = "Carl Rynegardh", email = "cfvr@languagewire.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-core>=1.7",
+    "langchain-openai>=1.7.4",
+    "pandas>=3.1.1",
+    "pydantic>=2",
+    "pymupdf>=2.1",
+    "python-dotenv>=1.2.4",
+    "pyyaml>=6.0.3",
+]
+
+[project.scripts]
+arr-pipeline = "annual_report_reader.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.6,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+    "tiktoken>=0.14.0",
+]
+
+[tool.ruff]
+line-length = 120

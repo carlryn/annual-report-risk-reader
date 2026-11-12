@@ -1,0 +1,11 @@
+{
+  "id": "vestas-2025",
+  "company": "Vestas Wind Systems A/S",
+  "sector": "Renewable energy / wind",
+  "year": 2025,
+  "sections": [
+    {"title": "Risk management", "pages": [50, 51]},
+    {"title": "Material impacts, risks, and opportunities", "pages": [71, 74]},
+    {"title": "G1 – Entity-specific Cyber security", "pages": [118, 118]}
+  ]
+}
